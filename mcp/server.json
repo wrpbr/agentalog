@@ -1,0 +1,13 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "com.agentalog/meta-agent-tools",
+  "description": "Registry of MCP servers, agent skills and plugins: search, filter, comments, likes, publish.",
+  "version": "1.0.0",
+  "websiteUrl": "https://agentalog.com",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://agentalog.com/mcp"
+    }
+  ]
+}
