@@ -1,0 +1,14 @@
+{
+  "name": "mural",
+  "displayName": "Agentalog — Meta Agent Tools",
+  "version": "1.0.0",
+  "description": "Find MCP servers, agent skills and plugins. Read their sources, tool lists, history and available review signals through a remote MCP server.",
+  "author": { "name": "Agentalog", "email": "contato@agentalog.com", "url": "https://agentalog.com" },
+  "homepage": "https://agentalog.com",
+  "repository": "https://github.com/wrpbr/agentalog",
+  "license": "MIT-0",
+  "keywords": ["mcp", "agent-skills", "plugins", "search"],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://agentalog.com/developers",
+  "supportUrl": "https://github.com/wrpbr/agentalog/issues"
+}

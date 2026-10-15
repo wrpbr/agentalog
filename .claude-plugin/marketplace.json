@@ -1,0 +1,16 @@
+{
+  "name": "mural",
+  "description": "Find MCP servers, agent skills and plugins. Read their sources, tool lists, history and available review signals through a remote MCP server.",
+  "owner": {
+    "name": "Agentalog",
+    "email": "contato@agentalog.com",
+    "url": "https://agentalog.com"
+  },
+  "plugins": [
+    {
+      "name": "mural",
+      "source": "./",
+      "category": "data"
+    }
+  ]
+}
