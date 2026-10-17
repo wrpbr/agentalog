@@ -1,5 +1,5 @@
 ---
-name: mural
+name: agentalog
 description: Find MCP servers, agent skills and plugins with Agentalog, then inspect their sources and review signals.
 license: MIT-0
 ---

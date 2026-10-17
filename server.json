@@ -1,10 +1,15 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.agentalog/meta-agent-tools",
-  "description": "Registry of MCP servers, agent skills and plugins: search, filter, comments, likes, publish.",
-  "version": "1.0.1",
+  "title": "Agentalog — Agent Auto Log",
+  "description": "Agent Auto Log: MCP servers, skills and plugins, with an automatic log of every change.",
+  "version": "1.0.2",
   "repository": { "url": "https://github.com/wrpbr/agentalog", "source": "github" },
   "websiteUrl": "https://agentalog.com",
+  "icons": [
+    { "src": "https://agentalog.com/icon-512.png", "mimeType": "image/png", "sizes": ["512x512"] },
+    { "src": "https://agentalog.com/icon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] }
+  ],
   "remotes": [
     {
       "type": "streamable-http",

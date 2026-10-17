@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "mural": {
+    "agentalog": {
       "type": "http",
       "url": "https://agentalog.com/mcp?checkout=site"
     }

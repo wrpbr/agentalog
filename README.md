@@ -1,6 +1,6 @@
-# Agentalog MCP server
+# Agent Auto Log MCP server
 
-Agentalog, also called Meta Agent Tools, helps an assistant find MCP servers, agent skills and plugins.
+Agent Auto Log (Agentalog) helps an assistant find MCP servers, agent skills and plugins.
 Each listing provides its source and available repository information. The service also provides tool lists,
 change history and review signals. This repository contains the connection settings and a user skill.
 The hosted service runs at [agentalog.com](https://agentalog.com).
