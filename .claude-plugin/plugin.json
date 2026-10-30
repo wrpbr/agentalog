@@ -1,7 +1,7 @@
 {
   "name": "agentalog",
   "displayName": "Agent Auto Log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Find MCP servers, agent skills and plugins. Read their sources, tool lists, history and available review signals through a remote MCP server.",
   "author": { "name": "Agentalog", "email": "contato@agentalog.com", "url": "https://agentalog.com" },
   "homepage": "https://agentalog.com",
