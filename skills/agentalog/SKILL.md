@@ -6,7 +6,20 @@ license: MIT-0
 
 # Agentalog
 
-MCP tools: `list_listings`, `listing_updates`, `get_listing`, `listing_security`, `listing_history`, `list_watched_tools`, `watch_tool`, `watch_alerts`, `unwatch_tool`.
+MCP tools: `list_listings`, `listing_updates`, `get_listing`, `listing_tools`, `listing_security`, `listing_history`, `list_watched_tools`, `watch_tool`, `watch_alerts`, `unwatch_tool`.
+
+## Everyday requests
+
+Use this skill when the user needs a tool for a task, wants evidence before installation or tracks changes.
+Reuse the task and client context. Resolve listing IDs from search instead of inventing identifiers.
+Compare supported operations, access requirements and dated evidence.
+A search or recommendation does not authorize installing or executing third-party code.
+
+- "Find an MCP server for searching PDF documents in my agent." Use `list_listings`, `get_listing` and `listing_tools`.
+- "Compare these two tools and explain which better fits my task." Compare their details, updates and security evidence.
+- "What recently changed in this MCP server our team uses?" Read `listing_updates` and `listing_history`.
+- "What evidence is available about this MCP before I install it?" Read `listing_security` and state the check's limits.
+- "Watch these MCP servers and show alerts when they change." Reuse `list_watched_tools`, then `watch_tool` and cursor-based `watch_alerts`.
 
 ## Find, inspect and watch
 
