@@ -39,6 +39,12 @@ To track later changes, use `POST https://agentalog.com/api/me/vigia` within fre
 The watch continues after the agent exits.
 Use `list_watched_tools` to inspect coverage and last checks.
 Read `watch_alerts`; pass the returned `cursor` as `depois` on the next call.
+Each notice gives the event, `de`, `para`, `visto_em` and links to the listing and security evidence.
+Explain the observed change first, then its task-specific impact and the proposed action.
+For a tool-list or skill-content change, review the current operations and permissions before the next use.
+For an unavailable server, report the affected task and verify recovery before relying on it again.
+A version change alone does not prove a security defect. An unknown impact remains unknown.
+These are review steps, not permission to install, execute or approve changed code.
 Use `unwatch_tool` when you no longer need the watch.
 For more tools, compare extra watch slots with a 30-day team package.
 The paid per-call check returns the same analysis as free `GET /api/check`.
@@ -54,6 +60,9 @@ Use existing tools or `https://agentalog.com/mcp`; HTTP uses the same API.
 Read [prices](https://agentalog.com/api/pricing) and [payment](https://agentalog.com/api/billing).
 Reuse existing access, coverage and spending authority.
 Direct MCP x402 uses `params._meta["x402/payment"]`; HTTP uses `PAYMENT-SIGNATURE`.
-Credit uses `Authorization: Bearer cred_…` or `X-Credito`. Keep it secret.
+An authenticated MCP connection already supplies access. Do not request another key or credit code.
+For account API calls, use `X-Api-Key: mmk_…` or `Authorization: Bearer mmo_…` (OAuth).
+On paid operations that accept account balance, that credential also authorizes payment.
+Without an account, prepaid credit uses `Authorization: Bearer cred_…`. Keep it secret.
 In `checkout=site`, the person purchases on the site. ChatGPT uses existing rights without sales.
 Follow returned IDs, pagination and `Retry-After`.
