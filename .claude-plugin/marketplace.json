@@ -1,6 +1,6 @@
 {
   "name": "agentalog",
-  "description": "Find MCP servers, agent skills and plugins. Read their sources, tool lists, history and available review signals through a remote MCP server.",
+  "description": "Find tools and inspect their sources. Watch package publishers, repositories and domains with dated changes through the remote MCP server.",
   "owner": {
     "name": "Agentalog",
     "email": "contato@agentalog.com",

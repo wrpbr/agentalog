@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "com.agentalog/meta-agent-tools",
   "title": "Agentalog — Agent Auto Log",
-  "description": "Track changes to MCP servers and skills you use. Free catalog and watch coverage; paid extra slots.",
-  "version": "1.0.2",
+  "description": "Watch MCP tools, package publishers and domains. Free catalog; paid continuing checks.",
+  "version": "1.1.0",
   "repository": { "url": "https://github.com/wrpbr/agentalog", "source": "github" },
   "websiteUrl": "https://agentalog.com",
   "icons": [

@@ -7,6 +7,7 @@ license: MIT-0
 # Agentalog
 
 MCP tools: `list_listings`, `listing_updates`, `get_listing`, `listing_tools`, `listing_security`, `listing_history`, `list_watched_tools`, `watch_tool`, `watch_alerts`, `unwatch_tool`.
+Dependency tools: `listing_dependencies`, `watch_dependency_changes`, `dependency_changes`.
 
 ## Everyday requests
 
@@ -20,6 +21,25 @@ A search or recommendation does not authorize installing or executing third-part
 - "What recently changed in this MCP server our team uses?" Read `listing_updates` and `listing_history`.
 - "What evidence is available about this MCP before I install it?" Read `listing_security` and state the check's limits.
 - "Watch these MCP servers and show alerts when they change." Reuse `list_watched_tools`, then `watch_tool` and cursor-based `watch_alerts`.
+- "Who publishes this tool's packages, and what changed?" Start with `listing_dependencies`. Reuse a paid watch pass for continuing collection.
+
+## Watch packages, publishers and domains
+
+Read `GET https://agentalog.com/api/listings/LISTING_ID/dependencies` for free declarations and cached sources.
+Route families: `GET /api/listings/:id/dependencies` and `GET|POST /api/me/vigia/:id/dependencies`.
+Replace `:id` with a listing ID returned by search.
+Use dated repository state and curated alternatives as evidence, not automatic replacement advice.
+A single-slot, Team or Business watch pass includes continuing package, publisher, maintainer-domain and repository checks.
+Reuse the pass, add the listing to your watchlist, then use `watch_dependency_changes` with `enabled: true`.
+The operation never purchases a pass. Sources enter the refresh queue every six hours, subject to upstream quotas.
+Use `dependency_changes` for before/after facts, sources and dates. Follow `monitoring.history_next`.
+Accounts receive operational notices; wallet owners read API history.
+The npm version publisher differs from current maintainers. PyPI author fields are declarations.
+Available PyPI file provenance is collected without independent cryptographic verification.
+Registry-provided expiry supports reminders at 30, 15 and 7 days. Missing dates remain unknown.
+An expired domain does not prove account takeover. We do not install packages or test account recovery.
+The paid addition keeps collection, comparison and notices running after this conversation.
+No equivalent-task token or money saving has been measured.
 
 ## Find, inspect and watch
 
